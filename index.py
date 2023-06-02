@@ -42,18 +42,18 @@ while running:
     x = random.randint(0, screen_width)
     y = random.randint(0, screen_height)
     mouse.position = (x, y)
-    time.sleep(random.uniform(0.5, 1.5))  # wait for a random interval
+    time.sleep(random.uniform(1.5, 5.5))  # wait for a random interval
 
     # Randomly switch between tabs
     if random.random() < 0.3:  # 30% chance to switch tab
         switch_tab()
-        time.sleep(random.uniform(0.5, 1.5))  # wait for a random interval
+        time.sleep(random.uniform(1.5, 5.5))  # wait for a random interval
 
     # Randomly scroll up or down
     if random.random() < 0.3:  # 30% chance to scroll
         scroll_direction = "up" if random.random() < 0.5 else "down"
         scroll_tab(scroll_direction)
-        time.sleep(random.uniform(0.5, 1.5))  # wait for a random interval
+        time.sleep(random.uniform(1.5, 5.5))  # wait for a random interval
 
 # Stop the listener when the script is done
 listener.stop()
